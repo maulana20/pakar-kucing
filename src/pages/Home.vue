@@ -1,14 +1,11 @@
 <template>
 	<div class="content">
 		<div class="content__image"><b-img src="img/cat.gif" /></div>
-		test
+		<div v-for="gejala in gejala_list" v-bind:key="gejala.kd_gejala">{{ gejala }}</div>
+		<div v-for="penyakit in penyakit_list" v-bind:key="penyakit.kd_penyakit">{{ penyakit }}</div>
 	</div>
 </template>
 <script>
-	import { MediaPakar } from '../service/media-pakar'
-	
-	const mediaPakar = new MediaPakar();
-	
 	export default {
 		name: "Home",
 		data: function()
@@ -20,17 +17,16 @@
 		},
 		mounted: function()
 		{
-			this.getGejala()
-			this.getPenyakit()
+			this.getStore()
 		},
 		methods: {
-			getGejala: function()
+			getStore: function()
 			{
-				mediaPakar.getGejala().then(response => this.gejala_list = response.items)
-			},
-			getPenyakit: function()
-			{
-				mediaPakar.getPenyakit().then(response => this.penyakit_list = response.items)
+				this.$store.dispatch('getGejalaList')
+				this.$store.dispatch('getPenyakitList')
+				
+				this.gejala_list = this.$store.getters.gejalaList
+				this.penyakit_list = this.$store.getters.penyakitList
 			}
 		}
 	}
