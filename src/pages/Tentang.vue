@@ -1,19 +1,21 @@
 <template>
 	<div class="content">
-		<div class="content__image"><b-img src="img/cat.gif" /></div>
+		<div class="content__info">
+			maulana saputra<br />
+			11150511
+		</div>
 	</div>
 </template>
 <script>
 	export default {
-		name: "Home"
+		name: "Tentang"
 	}
 </script>
 <style lang="scss" scoped>
 	.content {
 		margin: 60px 0 20px 0;
-		&__image {
+		&__info {
 			padding: 10px 0 10px 0;
-			text-align: center;
 		}
 	}
 </style>
