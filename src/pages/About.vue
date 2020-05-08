@@ -1,14 +1,13 @@
 <template>
 	<div class="content">
 		<div class="content__info">
-			maulana saputra<br />
-			11150511
+			About
 		</div>
 	</div>
 </template>
 <script>
 	export default {
-		name: "Tentang"
+		name: "About"
 	}
 </script>
 <style lang="scss" scoped>

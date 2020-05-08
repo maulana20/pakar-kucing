@@ -3,7 +3,7 @@
 		<div class="footer__sticky">
 			<div class="footer__menu">
 				<div class="footer__action"><span @click="$parent.diagnoseOpen()"><b-img-lazy src="img/cat_diagnosa.png" alt="diagnosa" height="90px"/></span></div>
-				<div class="footer__action"><span @click="$root.$emit('is_tentang', true)"><b-img-lazy src="img/cat_tentang.png" alt="tentang" height="90px" /></span></div>
+				<div class="footer__action"><span @click="$root.$emit('is_about', true)"><b-img-lazy src="img/cat_tentang.png" alt="tentang" height="90px" /></span></div>
 				<div class="footer__action"><span @click="$root.$emit('is_footer', false)"><b-img-lazy src="img/cat_keluar.png" alt="keluar" height="90px" /></span></div>
 			</div>
 		</div>
