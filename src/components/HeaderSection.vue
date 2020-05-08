@@ -1,16 +1,27 @@
 <template>
 	<header class="header">
 		<div class="header__sticky">
-			<div class="header__left"><div class="h2 mb-0"><b-icon-list /></div></div>
+			<div class="header__left"><div class="h2 mb-0"><span @click="showFooter()"><b-icon-list /></span></div></div>
 			<div class="header__center"><b-img src="img/pakar_kucing.png" height="35px" /></div>
-			<div class="header__right"><div class="h2 mb-2"><b-icon-blank /></div></div>
+			<div class="header__right"><div class="h2 mb-0"><b-icon-house-fill /></div></div>
 		</div>
 	</header>
 </template>
 
 <script>
 export default {
-	name: 'Header-Section'
+	name: 'Header-Section',
+	data: function() {
+		return {
+			is_footer: true
+		}
+	},
+	methods: {
+		showFooter: function() {
+			this.$root.$emit('is_footer', this.is_footer)
+			this.is_footer = this.is_footer == true ? false : true
+		}
+	}
 }
 </script>
 <style lang="scss" scoped>

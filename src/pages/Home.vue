@@ -3,37 +3,42 @@
 		<div class="content__image"><b-img src="img/cat.gif" /></div>
 		<div v-for="gejala in gejala_list" v-bind:key="gejala.kd_gejala">{{ gejala }}</div>
 		<div v-for="penyakit in penyakit_list" v-bind:key="penyakit.kd_penyakit">{{ penyakit }}</div>
+		<b-modal ref="diagnose-modal" hide-footer centered title="DIAGNOSA KE 1/16" hide-header-close no-close-on-backdrop>
+			<div class="d-block">Apakah kucing mengalami menggaruk-garuk badan berlebihan ?</div>
+			<b-button class="mt-2" variant="outline-danger" @click="$refs['diagnose-modal'].hide()">Close Me</b-button>&nbsp;
+			<b-button class="mt-2" variant="outline-warning" @click="$refs['diagnose-modal'].hide()">Toggle Me</b-button>
+		</b-modal>
 	</div>
 </template>
 <script>
 	export default {
 		name: "Home",
-		data: function()
-		{
-			return {
-				gejala_list: [],
-				penyakit_list: []
+		computed: {
+			gejala_list: function() {
+				return this.$store.getters.gejalaList
+			},
+			penyakit_list: function() {
+				return this.$store.getters.penyakitList
 			}
-		},
-		mounted: function()
-		{
-			this.getStore()
 		},
 		methods: {
-			getStore: function()
-			{
+			getStore: function() {
 				this.$store.dispatch('getGejalaList')
 				this.$store.dispatch('getPenyakitList')
-				
-				this.gejala_list = this.$store.getters.gejalaList
-				this.penyakit_list = this.$store.getters.penyakitList
+			},
+			diagnoseOpen: function() {
+				this.$refs['diagnose-modal'].show()
 			}
+		},
+		mounted: function() {
+			this.getStore()
 		}
 	}
 </script>
 <style lang="scss" scoped>
 	.content {
-		margin-top: 70px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		&__image {
 			padding-top: 10px;
 			text-align: center;

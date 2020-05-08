@@ -2,32 +2,17 @@
 	<footer class="footer">
 		<div class="footer__sticky">
 			<div class="footer__menu">
-				<div class="footer__action"><span @click="showModal"><b-img-lazy src="img/cat_diagnosa.png" alt="diagnosa" height="90px"/></span></div>
+				<div class="footer__action"><span @click="$parent.$children[1].diagnoseOpen()"><b-img-lazy src="img/cat_diagnosa.png" alt="diagnosa" height="90px"/></span></div>
 				<div class="footer__action"><b-img-lazy src="img/cat_tentang.png" alt="tentang" height="90px" /></div>
-				<div class="footer__action"><b-img-lazy src="img/cat_keluar.png" alt="keluar" height="90px" /></div>
+				<div class="footer__action"><span @click="$root.$emit('is_footer', false)"><b-img-lazy src="img/cat_keluar.png" alt="keluar" height="90px" /></span></div>
 			</div>
-			<b-modal ref="my-modal" hide-footer centered title="DIAGNOSA KE 1/16" hide-header-close no-close-on-backdrop>
-				<div class="d-block">Apakah kucing mengalami menggaruk-garuk badan berlebihan ?</div>
-				<b-button class="mt-2" variant="outline-danger" @click="hideModal">Close Me</b-button>&nbsp;
-				<b-button class="mt-2" variant="outline-warning" @click="toggleModal">Toggle Me</b-button>
-			</b-modal>
 		</div>
 	</footer>
 </template>
 
 <script>
 export default {
-	name: 'Footer-Section',
-	methods: {
-		showModal: function()
-		{
-			this.$refs['my-modal'].show()
-		},
-		hideModal: function()
-		{
-			this.$refs['my-modal'].hide()
-		}
-	}
+	name: 'Footer-Section'
 }
 </script>
 <style lang="scss" scoped>

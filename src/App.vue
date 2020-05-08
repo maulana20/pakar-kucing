@@ -3,8 +3,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<header-section />
-		<home />
-		<footer-section />
+		<b-container>
+			<home />
+		</b-container>
+		<footer-section v-if="is_footer" />
 	</div>
 </template>
 <script>
@@ -18,6 +20,16 @@
 			HeaderSection,
 			Home,
 			FooterSection
+		},
+		data: function() {
+			return {
+				is_footer: false
+			}
+		},
+		mounted: function() {
+			this.$root.$on('is_footer', (value) => {
+				this.is_footer = value
+			})
 		}
 	}
 </script>
