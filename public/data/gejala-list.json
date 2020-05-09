@@ -1,1 +1,68 @@
-{"items":[{"kd_gejala":"G01","nm_gejala":"Menggaruk-garuk badan berlebihan"},{"kd_gejala":"G02","nm_gejala":"Kulit terlihat kemerahan"},{"kd_gejala":"G03","nm_gejala":"Bulu rontok berlebihan"},{"kd_gejala":"G04","nm_gejala":"Terdapat kebotakan pada daerah tubuhnya"},{"kd_gejala":"G05","nm_gejala":"Kulit terlihat kering\/bersisik"},{"kd_gejala":"G06","nm_gejala":"Bercak putih seperti ketombe"},{"kd_gejala":"G07","nm_gejala":"Luka\/lesi berbentuk melingkar"},{"kd_gejala":"G08","nm_gejala":"Muncul kerak\/keropeng pada bagian telinga dan wajah"},{"kd_gejala":"G09","nm_gejala":"Terdapat kerak\/keropeng"},{"kd_gejala":"G10","nm_gejala":"Luka bernanah"},{"kd_gejala":"G11","nm_gejala":"Luka berbentuk benjolan"},{"kd_gejala":"G12","nm_gejala":"Mengeluarkan bau tak sedap"},{"kd_gejala":"G13","nm_gejala":"Bintik-bintik kecil menempel pada bulu"},{"kd_gejala":"G14","nm_gejala":"Warna bulu pucat dan kotor kehitaman"},{"kd_gejala":"G15","nm_gejala":"Jerawat\/komedo pada bagian dagu"},{"kd_gejala":"G16","nm_gejala":"Pembengkakan pada bagian dagu"}]}
+{
+	"items":[
+		{
+			"kd_gejala": "G01",
+			"nm_gejala": "Menggaruk-garuk badan berlebihan"
+		},
+		{
+			"kd_gejala": "G02",
+			"nm_gejala":"Kulit terlihat kemerahan"
+		},
+		{
+			"kd_gejala": "G03",
+			"nm_gejala": "Bulu rontok berlebihan"
+		},
+		{
+			"kd_gejala": "G04",
+			"nm_gejala": "Terdapat kebotakan pada daerah tubuhnya"
+		},
+		{
+			"kd_gejala": "G05",
+			"nm_gejala": "Kulit terlihat kering\/bersisik"
+		},
+		{
+			"kd_gejala": "G06",
+			"nm_gejala": "Bercak putih seperti ketombe"
+		},
+		{
+			"kd_gejala": "G07",
+			"nm_gejala":"Luka\/lesi berbentuk melingkar"
+		},
+		{
+			"kd_gejala": "G08",
+			"nm_gejala": "Muncul kerak\/keropeng pada bagian telinga dan wajah"
+		},
+		{
+			"kd_gejala": "G09",
+			"nm_gejala": "Terdapat kerak\/keropeng"
+		},
+		{
+			"kd_gejala": "G10",
+			"nm_gejala": "Luka bernanah"
+		},
+		{
+			"kd_gejala": "G11",
+			"nm_gejala": "Luka berbentuk benjolan"
+		},
+		{
+			"kd_gejala": "G12",
+			"nm_gejala": "Mengeluarkan bau tak sedap"
+		},
+		{
+			"kd_gejala": "G13",
+			"nm_gejala": "Bintik-bintik kecil menempel pada bulu"
+		},
+		{
+			"kd_gejala": "G14",
+			"nm_gejala": "Warna bulu pucat dan kotor kehitaman"
+		},
+		{
+			"kd_gejala": "G15",
+			"nm_gejala": "Jerawat\/komedo pada bagian dagu"
+		},
+		{
+			"kd_gejala": "G16",
+			"nm_gejala": "Pembengkakan pada bagian dagu"
+		}
+	]
+}

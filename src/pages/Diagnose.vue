@@ -53,8 +53,7 @@
 					if (option == 'YES') this.diagnose_list.push(data)
 					
 					this.$refs['diagnose-modal'].hide()
-					this.$root.$emit('is_conclusion', true)
-					console.log(this.diagnose_list)
+					this.$root.$emit('is_conclusion', true, this.diagnose_list, 'P04')
 					
 					this.initData()
 				} else {

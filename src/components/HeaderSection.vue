@@ -1,9 +1,9 @@
 <template>
 	<header class="header">
 		<div class="header__sticky">
-			<div class="header__left"><div class="h2 mb-0"><span @click="showFooter()"><b-icon-list /></span></div></div>
+			<div class="header__left"><div class="h4 mb-0"><span @click="showFooter()"><b-icon-list /></span></div></div>
 			<div class="header__center"><b-img src="img/pakar_kucing.png" height="35px" /></div>
-			<div class="header__right"><div class="h2 mb-0"><span @click="$root.$emit('is_home', true)"><b-icon-house-fill /></span></div></div>
+			<div class="header__right"><div class="h4 mb-0"><span @click="$root.$emit('is_home', true)"><b-icon-house-fill /></span></div></div>
 		</div>
 	</header>
 </template>

@@ -1,1 +1,64 @@
-{"items":[{"kd_penyakit":"P01","nm_penyakit":"Dermatophytosis","img_src":"https:\/\/kucinggaul.com\/wp-content\/uploads\/2014\/10\/dermatophytosis-620x330.jpg","relasi":[{"kd_gejala":"G01"},{"kd_gejala":"G02"},{"kd_gejala":"G03"},{"kd_gejala":"G04"},{"kd_gejala":"G05"},{"kd_gejala":"G06"},{"kd_gejala":"G07"}]},{"kd_penyakit":"P02","nm_penyakit":"Scabies","img_src":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn%3AANd9GcSddMOEQu-DTdxbX-oJC2hF-iasfT4XuYjdqM2vl3RNxOlRqFCs&usqp=CAU","relasi":[{"kd_gejala":"G01"},{"kd_gejala":"G02"},{"kd_gejala":"G03"},{"kd_gejala":"G08"},{"kd_gejala":"G11"}]},{"kd_penyakit":"P03","nm_penyakit":"Pyoderma","img_src":"https:\/\/4.bp.blogspot.com\/-66wrndIReek\/VxTrlj9G2VI\/AAAAAAAABPA\/DjuJDDFYGTMl86QValKbBSEwxEe7PEgdgCKgB\/s400\/pyoderma-1_2009.jpg","relasi":[{"kd_gejala":"G02"},{"kd_gejala":"G03"},{"kd_gejala":"G10"},{"kd_gejala":"G11"},{"kd_gejala":"G12"}]},{"kd_penyakit":"P04","nm_penyakit":"Infestasi Kutu","img_src":"https:\/\/entrefraldasepanelas.files.wordpress.com\/2017\/04\/gambar-telur-kutu-pada-kucing.jpg?w=640","relasi":[{"kd_gejala":"G01"},{"kd_gejala":"G03"},{"kd_gejala":"G13"},{"kd_gejala":"G14"}]},{"kd_penyakit":"P05","nm_penyakit":"Felice Acne","img_src":"https:\/\/2.bp.blogspot.com\/-AJwbidWwJ2U\/VhSvJU66--I\/AAAAAAAABUg\/RR5mRizSjIc\/s1600\/7b80859cccf9a6a34e8d81ec2ac94a2b.jpg","relasi":[{"kd_gejala":"G11"},{"kd_gejala":"G12"},{"kd_gejala":"G15"},{"kd_gejala":"G16"}]}]}
+{
+	"items": [
+		{
+			"kd_penyakit": "P01",
+			"nm_penyakit": "Dermatophytosis",
+			"img_src": "https:\/\/kucinggaul.com\/wp-content\/uploads\/2014\/10\/dermatophytosis-620x330.jpg",
+			"relasi": [
+				{ "kd_gejala": "G01" },
+				{ "kd_gejala": "G02" },
+				{ "kd_gejala": "G03" },
+				{ "kd_gejala": "G04" },
+				{ "kd_gejala": "G05" },
+				{ "kd_gejala": "G06" },
+				{ "kd_gejala": "G07" }
+			]
+		},
+		{
+			"kd_penyakit": "P02",
+			"nm_penyakit": "Scabies",
+			"img_src": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn%3AANd9GcSddMOEQu-DTdxbX-oJC2hF-iasfT4XuYjdqM2vl3RNxOlRqFCs&usqp=CAU",
+			"relasi": [
+				{ "kd_gejala": "G01" },
+				{ "kd_gejala": "G02" },
+				{ "kd_gejala": "G03" },
+				{ "kd_gejala": "G08" },
+				{ "kd_gejala": "G11" }
+			]
+		},
+		{
+			"kd_penyakit": "P03",
+			"nm_penyakit": "Pyoderma",
+			"img_src": "https:\/\/4.bp.blogspot.com\/-66wrndIReek\/VxTrlj9G2VI\/AAAAAAAABPA\/DjuJDDFYGTMl86QValKbBSEwxEe7PEgdgCKgB\/s400\/pyoderma-1_2009.jpg",
+			"relasi": [
+				{ "kd_gejala": "G02" },
+				{ "kd_gejala": "G03" },
+				{ "kd_gejala": "G10" },
+				{ "kd_gejala": "G11" },
+				{ "kd_gejala": "G12" }
+			]
+		},
+		{
+			"kd_penyakit": "P04",
+			"nm_penyakit": "Infestasi Kutu",
+			"img_src": "https:\/\/entrefraldasepanelas.files.wordpress.com\/2017\/04\/gambar-telur-kutu-pada-kucing.jpg?w=640",
+			"relasi": [
+				{ "kd_gejala": "G01" },
+				{ "kd_gejala": "G03" },
+				{ "kd_gejala": "G13" },
+				{ "kd_gejala": "G14" }
+			]
+		},
+		{
+			"kd_penyakit": "P05",
+			"nm_penyakit": "Felice Acne",
+			"img_src": "https:\/\/2.bp.blogspot.com\/-AJwbidWwJ2U\/VhSvJU66--I\/AAAAAAAABUg\/RR5mRizSjIc\/s1600\/7b80859cccf9a6a34e8d81ec2ac94a2b.jpg",
+			"relasi": [
+				{ "kd_gejala": "G11" },
+				{ "kd_gejala": "G12" },
+				{ "kd_gejala": "G15" },
+				{ "kd_gejala": "G16" }
+			]
+		}
+	]
+}
