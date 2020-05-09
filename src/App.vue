@@ -7,11 +7,7 @@
 			<home v-if="is_home" />
 			<about v-if="is_about" />
 			<conclusion v-if="is_conclusion" />
-			<b-modal ref="diagnose-modal" hide-footer centered title="DIAGNOSA KE 1/16" hide-header-close no-close-on-backdrop>
-				<div class="d-block">Apakah kucing mengalami menggaruk-garuk badan berlebihan ?</div>
-				<b-button class="mt-2" variant="outline-danger" @click="diagnoseClose()">Close Me</b-button>&nbsp;
-				<b-button class="mt-2" variant="outline-warning" @click="diagnoseClose()">Toggle Me</b-button>
-			</b-modal>
+			<diagnose />
 		</div>
 		<footer-section v-if="is_footer" />
 	</div>
@@ -22,6 +18,7 @@
 	import Home from './pages/Home';
 	import About from './pages/About';
 	import Conclusion from './pages/Conclusion';
+	import Diagnose from './pages/Diagnose';
 	
 	export default {
 		name: 'App',
@@ -30,14 +27,15 @@
 			FooterSection,
 			Home,
 			About,
-			Conclusion
+			Conclusion,
+			Diagnose
 		},
 		data: function() {
 			return {
 				is_footer: false,
 				is_home: true,
 				is_about: false,
-				is_conclusion: false,
+				is_conclusion: false
 			}
 		},
 		mounted: function() {
@@ -60,18 +58,14 @@
 				this.$root.$on('is_about', (value) => {
 					this.showDisplay('is_about', value)
 				})
+				this.$root.$on('is_conclusion', (value) => {
+					this.showDisplay('is_conclusion', value)
+				})
 			},
 			showDisplay: function(data, value) {
 				this.is_home = this.is_about = this.is_conclusion = false
 				this[data] = value
-			},
-			diagnoseOpen: function() {
-				this.$refs['diagnose-modal'].show()
 				this.is_footer = false
-			},
-			diagnoseClose: function() {
-				this.$refs['diagnose-modal'].hide()
-				this.showDisplay('is_conclusion',true)
 			}
 		}
 	}

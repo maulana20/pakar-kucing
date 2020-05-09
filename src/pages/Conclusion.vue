@@ -1,20 +1,26 @@
 <template>
 	<div class="content">
 		<div class="content__info">
-			<b-card no-body>
-				<b-tabs pills card>
-					<b-tab title="Kesimpulan" active>
-						<b-card :title="penyakit_list[0].nm_penyakit" :img-src="penyakit_list[0].img_src" img-alt="Image" img-top tag="article" style="max-width: 100%;">
-							<b-card-text>{{ solusi_list[0].solusi }}</b-card-text>
-						</b-card>
-					</b-tab>
-					<b-tab title="Diagnosa">
-						<b-list-group>
-							<b-list-group-item v-for="diagnosa in diagnosa_list" v-bind:key="diagnosa.kd_gejala">{{ diagnosa.nm_gejala }}</b-list-group-item>
-						</b-list-group>
-					</b-tab>
-				</b-tabs>
-			</b-card>
+			<div v-if="solusi_list[0].solusi">
+				<b-card no-body>
+					<b-tabs pills card>
+						<b-tab title="Kesimpulan" active>
+							<b-card :title="penyakit_list[0].nm_penyakit" :img-src="penyakit_list[0].img_src" img-alt="Image" img-top tag="article" style="max-width: 100%;">
+								<b-card-text>{{ solusi_list[0].solusi }}</b-card-text>
+							</b-card>
+						</b-tab>
+						<b-tab title="Diagnosa">
+							<b-list-group>
+								<b-list-group-item v-for="diagnosa in diagnosa_list" v-bind:key="diagnosa.kd_gejala">{{ diagnosa.nm_gejala }}</b-list-group-item>
+							</b-list-group>
+						</b-tab>
+					</b-tabs>
+				</b-card>
+			</div>
+			<div style="text-align: center;" v-else>
+				<b-spinner style="width: 3rem; height: 3rem;" class="m-5" label="Busy"></b-spinner>
+				<div>Sedang memuat ...</div>
+			</div>
 		</div>
 	</div>
 </template>
