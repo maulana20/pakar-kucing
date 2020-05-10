@@ -1,7 +1,7 @@
 <template>
 	<div class="content">
 		<div class="content__info">
-			<div v-if="solusi_data.solusi">
+			<div v-if="show_solusi">
 				<b-card no-body>
 					<b-tabs pills card>
 						<b-tab title="Kesimpulan" active>
@@ -28,11 +28,29 @@
 	export default {
 		name: "Conclusion",
 		props: ['diagnoseList', 'kdPenyakit'],
+		data: function() {
+			return {
+				show_solusi: false
+			}
+		},
+		mounted: function() {
+			this.showDiagnose('mounted')
+		},
+		watch: {
+			'kdPenyakit': function() { this.showDiagnose('watch') }
+		},
 		computed: {
 			solusi_data: function() {
 				var solusi_list = this.$store.getters.solusiList
 				
 				return solusi_list.find(data => data.kd_penyakit === this.kdPenyakit)
+			}
+		},
+		methods: {
+			showDiagnose: function(from) {
+				console.log('show-diagnose from ' + from)
+				this.show_solusi = false
+				setInterval(() => { this.show_solusi = true }, 3000)
 			}
 		}
 	}
