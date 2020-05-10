@@ -27,6 +27,11 @@
 				return
 			})
 		},
+		computed: {
+			penyakit_list: function() {
+				return this.$store.getters.penyakitList
+			}
+		},
 		methods: {
 			initData: function() {
 				this.index = 0
@@ -46,14 +51,16 @@
 				}
 				
 				this.$refs['diagnose-modal'].show()
-				this.$root.$emit('is_footer', true)
+				this.$root.$emit('is_footer', false)
 			},
 			diagnoseNext: function(data, option, index) {
 				if (this.is_last == true) {
 					if (option == 'YES') this.diagnose_list.push(data)
 					
 					this.$refs['diagnose-modal'].hide()
-					this.$root.$emit('is_conclusion', true, this.diagnose_list, 'P04')
+					
+					var diagnose_penyakit = this.diagnosePenyakit()
+					this.$root.$emit('is_conclusion', true, this.diagnose_list, diagnose_penyakit)
 					
 					this.initData()
 				} else {
@@ -62,6 +69,25 @@
 					this.diagnoseOpen(index)
 					if (this.index == this.count) this.is_last = true
 				}
+			},
+			diagnosePenyakit: function() {
+				var diagnose_sementara = []
+				
+				this.penyakit_list.forEach((penyakit) => {
+					var diagnose_count = 0
+					this.diagnose_list.forEach((diagnose) => {
+						if (penyakit.relasi.indexOf(diagnose.kd_gejala) > -1) diagnose_count++
+					})
+					if (diagnose_count > 0) diagnose_sementara.push({ kd_penyakit: penyakit.kd_penyakit, diagnosa_count: diagnose_count, diagnose_remain: (penyakit.relasi.length - diagnose_count) })
+				})
+				
+				var penyakit_sementara = this.penyakitSementara(diagnose_sementara)
+				
+				return penyakit_sementara[0].kd_penyakit
+			},
+			penyakitSementara: function(diagnose_sementara) {
+				var remain = Math.min.apply(Math, diagnose_sementara.map((data) => data.diagnose_remain))
+				return diagnose_sementara.filter((data) => data.diagnose_remain === remain)
 			}
 		}
 	}

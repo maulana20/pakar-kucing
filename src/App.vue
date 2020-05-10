@@ -64,7 +64,6 @@
 				this.$root.$on('is_conclusion', (value, data, kd_penyakit) => {
 					this.diagnose_list = data
 					this.kd_penyakit = kd_penyakit
-					console.log(this.diagnose_list, this.kd_penyakit)
 					this.showDisplay('is_conclusion', value)
 				})
 			},
