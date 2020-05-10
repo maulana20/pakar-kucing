@@ -4,30 +4,35 @@
 			"kd_solusi": "AA",
 			"kd_penyakit": "P01",
 			"nm_penyakit": "Dermatophytosis",
+			"img_src": "https:\/\/kucinggaul.com\/wp-content\/uploads\/2014\/10\/dermatophytosis-620x330.jpg",
 			"solusi": "Mandikan kucing dengan shampoo yang mengandung ketoconazole (obat jamur kulit) seminggu sekali, lalu diamkan selama 15 menit sebelum dibilas, keringkan sempurna. Terapi luar dengan mengoleskan obat jamur yang akan diberikan oleh dokter. Bawa kucing anda ke dokter hewan, dokter akan memberikan obat terapi yang tepat."
 		},
 		{
 			"kd_solusi": "BB",
 			"kd_penyakit": "P02",
 			"nm_penyakit": "Scabies",
+			"img_src": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn%3AANd9GcSddMOEQu-DTdxbX-oJC2hF-iasfT4XuYjdqM2vl3RNxOlRqFCs&usqp=CAU",
 			"solusi": "Mandikan kucing dengan shampoo yang mengandung zat sulfur yang bisa anda dapat di petshop terdekat. Terapi luar dengan mengoleskan obat salep yang mempunyai kandungan permethrin, petrolatum, triamcolone, dermatech, dan gamaxena. Bawa kucing anda ke dokter hewan, dokter akan memberikan injeksi atau suntikan anti scabiesis."
 		},
 		{
 			"kd_solusi": "CC",
 			"kd_penyakit": "P03",
 			"nm_penyakit": "Pyoderma",
+			"img_src": "https:\/\/4.bp.blogspot.com\/-66wrndIReek\/VxTrlj9G2VI\/AAAAAAAABPA\/DjuJDDFYGTMl86QValKbBSEwxEe7PEgdgCKgB\/s400\/pyoderma-1_2009.jpg",
 			"solusi": "Mencuci rutin pada luka kucing dengan benzoil peroksida atau obat lain seperti alkohol dan rivanol untuk mengurangi infeksi bakteri pada luka kucing. Bawa kucing anda ke dokter hewan, dokter akan memberikan resep anti biotik berupa obat, suntikan, atau dioleskan dalam berbagai formula (gel, foam, krim, shampoo, conditioner dan spray)."
 		},
 		{
 			"kd_solusi": "DD",
 			"kd_penyakit": "P04",
 			"nm_penyakit": "Infestasi Kutu",
+			"img_src": "https:\/\/entrefraldasepanelas.files.wordpress.com\/2017\/04\/gambar-telur-kutu-pada-kucing.jpg?w=640",
 			"solusi": "Mandikan kucing dengan shampoo khusus kutu kucing. Setelah dimandikan, lakukan secara teratur penyisiran bulu kucing untuk menghilangkan kutu yang masih tersisa. Semprotkan larutan lemon ke bulu kucing secara teratur untuk mencegah kutu kembali datang."
 		},
 		{
 			"kd_solusi": "EE",
 			"kd_penyakit": "P05",
 			"nm_penyakit": "Felice Acne",
+			"img_src": "https:\/\/2.bp.blogspot.com\/-AJwbidWwJ2U\/VhSvJU66--I\/AAAAAAAABUg\/RR5mRizSjIc\/s1600\/7b80859cccf9a6a34e8d81ec2ac94a2b.jpg",
 			"solusi": "Hindari tempat makan kucing yang berbahan plastik dan gunakanlah tempan makan kucing berbahan stainless. Bersihkan sisa makanan yang menempel pada dagu kucing. Mandikan kucing dengan shampoo yang mengandung benzoil peroksida dengan konsentrasi kurang dari 3% atau benzoil peroksida gel yang berfungsi untuk menghancurkan minyak pada kelenjar minyak. Bawa kucing ke dokter hewan, dokter akan memberikan anti biotik baik oral maupun topical seperti mupirocin untuk menghindari kucing dari infeksi sekunder."
 		}
 	]
