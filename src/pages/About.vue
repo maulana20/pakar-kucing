@@ -30,8 +30,4 @@
 			padding: 10px 0 20px 0;
 		}
 	}
-	p {
-		text-align: justify;
-		text-justify: inter-word;
-	}
 </style>

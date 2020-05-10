@@ -6,7 +6,7 @@
 					<b-tabs pills card>
 						<b-tab title="Kesimpulan" active>
 							<b-card :title="solusi_data.nm_penyakit" :img-src="solusi_data.img_src" img-alt="Kesimpulan" img-top tag="article" style="max-width: 100%;">
-								<b-card-text>{{ solusi_data.solusi }}</b-card-text>
+								<b-card-text><p>{{ solusi_data.solusi }}</p></b-card-text>
 							</b-card>
 						</b-tab>
 						<b-tab title="Diagnosa">
